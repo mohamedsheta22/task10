@@ -1,0 +1,77 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+img{
+   border: 3px solid blue;
+   width: 120px;
+   height: 120px;
+   margin: 5px;
+   box-shadow: #f06e23 3px 3px 8px ;
+   transition: transform 1s;
+}
+img:hover{
+   transform: scale(1.2);
+}
+img:active{
+   transform: scale(4);
+   box-shadow: #3cf00f 3px 3px 8px ;
+}
+.parent{
+   width: 70%;
+   height: 600px;
+   border-radius: 5%;
+   border: 5px solid #dada70;
+   text-align: center;
+   padding: 15px;
+   margin: 20px auto;
+   overflow: hidden;
+   display: -webkit-box;
+   background: scroll;
+   transition: transform 2s;
+   box-shadow: #84f3a0 50px 50px 50px inset,#89e687 -50px -50px 50px inset ;
+}
+.parent:hover{
+transform: skew(10deg);
+box-shadow: #84f3a0 20px 20px 50px ,#89e687 -20px -20px 50px ,#f52d0a 50px 50px 50px inset,#f11326 -50px -50px 50px inset;
+}
+.parent:active{
+   transform: scale(0.2);
+}
+
+.child1{
+  width: 35%;
+  height: 550px;
+  column-rule: 3px solid red;
+  border: 4px solid black;
+  padding: 10px;
+  margin: 10px;
+  column-gap: 30px;
+  column-count: 3;
+  -webkit-box-flex: 1;
+  overflow: auto hidden;
+  border-radius: 10px;
+  box-shadow: #82efca 50px 50px 20px inset,#caf8e8 -50px -50px 30px inset ;
+ 
+
+}
+.child2{
+  width: 65%;
+  height: 550px;
+  border-radius: 10px;
+  border: 4px solid rgb(64, 17, 235);
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden auto;
+  box-shadow: #ece9e7 50px 50px 50px inset,#f7f3f1 -50px -50px 50px inset ;
+}
+mark{
+  background-color: red;
+}
+mark:hover{
+  background-color: #dada70;
+}
+mark:active{
+  text-shadow: 2px 2px 2px #6d7af3;
+}
